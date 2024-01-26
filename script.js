@@ -1,28 +1,28 @@
 const animalImages = {
   'panda': 'images/Panda.jpg',
-  'Elephant': 'images/Elephant.jpg',
-  'Whale': 'images/Whale.jpg',
-  'Butterfly': 'images/Butterfly.jpg',
-  'Lion': 'images/Lion.jpg',
-  'Giraffe': 'images/Giraffe.jpg',
-  'Dolpin': 'images/Dolphin.jpg',
+  'elephant': 'images/elephant.jpg',
+  'whale': 'images/whale.jpg',
+  'butterfly': 'images/butterfly.jpg',
+  'lion': 'images/lion.jpg',
+  'giraffe': 'images/giraffe.jpg',
+  'dolphin': 'images/dolphin.jpg',
   'fox': 'images/fox.jpg',
-  'Eagle': 'images/Eagle.jpg',
-  'Rhinoceros': 'images/Rhinoceros.jpg',
+  'eagle': 'images/eagle.jpg',
+  'rhinoceros': 'images/rhinoceros.jpg',
 };
 
 const travelModeImages = {
-  'Shuttle': 'images/Shuttle.jpg',
-  'Jumper': 'images/Jumper.jpg',
-  'Spaceship': 'images/Spaceship.jpg',
-  'Tunnel': 'images/Tunnel.jpg',
-  'Explorer': 'images/Explorer.jpg',
-  'Glider': 'images/Glider.jpg',
-  'Cosmic': 'images/Cosmic.jpg',
-  'Hyper': 'images/Hyper.jpg',
-  'Conveyor': 'images/Conveyor.jpg',
-  'Slingshot': 'images/Slingshot.jpg',
-  // ... other travel modes
+  'shuttle': 'images/shuttle.jpg',
+  'jumper': 'images/jumper.jpg',
+  'spaceship': 'images/spaceship.jpg',
+  'tunnel': 'images/tunnel.jpg',
+  'explorer': 'images/explorer.jpg',
+  'glider': 'images/glider.jpg',
+  'cosmic': 'images/cosmic.jpg',
+  'hyper': 'images/hyper.jpg',
+  'conveyor': 'images/conveyor.jpg',
+  'slingshot': 'images/slingshot.jpg',
+ 
 };
 
 const planetImages = {
@@ -33,7 +33,7 @@ const planetImages = {
   'saturn': 'images/saturn.jpg',
   'uranus': 'images/uranus.jpg',
   'neptune': 'images/neptune.jpg',
-  // ... other planets
+
 };
 
 function generateIdea() {
@@ -45,7 +45,7 @@ function generateIdea() {
   const travelMode = travelModes[Math.floor(Math.random() * travelModes.length)];
   const planet = planets[Math.floor(Math.random() * planets.length)];
   
-  const story = `${animal} ${travelMode} ${planet}`;
+  const story = `${animal} uses ${travelMode} fly to ${planet}`;
   document.getElementById('six-words-story').value = story;
   updateImage(story);
 }

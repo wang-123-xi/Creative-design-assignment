@@ -27,10 +27,10 @@ body {
 }
 
 #six-words-story {
-  font-size: 20px; 
+  font-size: 28px; 
   text-align: center;
   color: #ffffff;
-  background-color: #f78b11;
+  background-color: #f72fb1;
 }
 
 .main {
@@ -39,53 +39,92 @@ body {
   align-items: center;
   padding: 20px;
 }
+.input-group {
 
-.input-group label,
-.input-group input,
-.input-group button {
+  text-align: center; /
+}
+
+.input-group label{
   display: block;
-  width: 100%;
+  width: 50%;
   margin-bottom: 10px;
 }
 
-.six-words-story {
-  padding: 20px;
-  border-radius: 5px;
- 
+.input-group input{
+  display: block;
+  width: 50%;
+  margin-bottom: 30px;
+  margin: 0 auto; /* Auto margins for horizontal centering */
+  text-align: center;
 
+}
+
+.input-group button {
+  display: block;
+  width: 15%;
+  margin-bottom: 10px;
+  margin: 0 auto; /* Auto margins for horizontal centering */
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 28px; 
+  color: #ffffff;
+}
+
+
+.six-words-story {
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px 0;
   
 }
-.story-image,.image-item img {
+.story-image{
   width: 200px;
   height: 200px;
   object-fit: cover; 
-  border: 2px solid #0be2f5;
-  margin-bottom: 10px;
-  
+  border: 3px solid #ff07b5;
+  margin: 0 10px 20px 10px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 60px; 
+  margin-right: 60px; 
 }
+.image-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  border: 3px solid #ff07b5;
+  margin: 0 10px 20px 10px;
+  vertical-align: middle;
+  display: inline-block;
 
+}
 button {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: #00d9ff;
+  background-color: #00c3ff;
   color: white;
   cursor: pointer;
+  width: 10%;
+
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #868686;
 }
 
 .image-container {
   text-align: center;
+  
 }
 
 .image-container img {
-  width: 200px;  
-  height: 200px;
+  width: 100px;  
+  height: 100px;
   object-fit: cover; 
-  border: 2px solid #f241cc; 
+  border: 2px solid #000000; 
   margin-bottom: 10px; 
 }
 
