@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Animal Exploration Team</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Space Animal Exploration Team</h1>
+    </header>
+    
+    <main>
+      <div class="input-group">
+        <label for="six-words-story">six words story:</label>
+        <input type="text" id="six-words-story" placeholder="Enter a six-word story" oninput="updateImage()">
+        <div id="image-container"></div>
+        <button onclick="generateIdea()">Generate</button>
+      </div>
+      
+      <div class="image-container">
+        <div class="image-row">
+          <div class="image-item">
+            <img src="images\animal icon.jpg" alt="Animal Icon" />
+            <p class="image-caption">Animal</p>
+          </div>
+          <div class="image-item">
+            <img src="images/spaceship icon.jpg" alt="Spaceship Icon" />
+            <p class="image-caption">Spaceship</p>
+          </div>
+          <div class="image-item">
+            <img src="images/planeticon.jpg" alt="Planet Icon" />
+            <p class="image-caption">Planet</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <aside>
+      <div class="list-container">
+        <ul>
+          <li><strong>Animal Types:</strong></li>
+          <li>Panda</li>
+          <li>Elephant</li>
+          <li>Whale</li>
+          <li>Butterfly</li>
+          <li>Lion</li>
+          <li>Giraffe</li>
+          <li>Dolphin</li>
+          <li>Fox</li>
+          <li>Eagle</li>
+          <li>Rhinoceros</li>
+        </ul>
+        
+        <ul>
+          <li><strong>Modes of Travel:</strong></li>
+          <li>Shuttle</li>
+          <li>Jumper</li>
+          <li>Spaceship</li>
+          <li>Tunnel</li>
+          <li>Explorer</li>
+          <li>Glider</li>
+          <li>Cosmic </li>
+          <li>Hyper</li>
+          <li>Conveyor</li>
+          <li>Slingshot</li>
+        </ul>
+        
+        <ul>
+          <li><strong>Planet Names:</strong></li>
+          <li>Mercury</li>
+          <li>Venus</li>
+          <li>Mars</li>
+          <li>Jupiter</li>
+          <li>Saturn</li>
+          <li>Uranus</li>
+          <li>Neptune</li>
+          
+        </ul>
+      </div>
+    </aside>
+    
+    <footer>
+      <p>© 2024 Space Animal Exploration Team</p>
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
